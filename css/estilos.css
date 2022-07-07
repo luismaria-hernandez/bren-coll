@@ -1,0 +1,198 @@
+
+/* Reseteo del CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+/* --INDEX-- */
+
+/* Header y navegación*/
+
+header {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.979);
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid grey;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__lista {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.header__item a {
+    text-decoration: none;   
+    font-size: 20px;
+    color:rgba(224, 196, 250, 0.575);
+}
+
+.header__item :hover {
+    color: whitesmoke;
+    background-color: rgba(224, 196, 250, 0.575);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/*Sección portada*/
+
+.portada {
+    display: flex;
+    justify-content: center;
+}
+
+.portada__img {
+    width: 100%;
+}
+
+/*Sección presentación*/
+
+
+.presentacion {
+    padding: 20px 20px;
+    background-color: rgba(165, 78, 247, 0.575);
+    color: rgb(20, 20, 20);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentacion__titulo {
+    font-size: 50px;
+}
+
+.presentacion__texto {
+    width: 600px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*Seccion Novedades*/
+
+.novedades {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.774); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.novedades__titulo {
+    color: white;
+    font-size: 50px;
+}
+
+.novedad1__img, .novedad2__img {
+    width: 150px;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 4px;
+}
+
+.novedad1, .novedad2 {
+    display: flex;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    padding: 16px;
+    border-radius: 4px;
+    width: 900px;
+    height: 110px;
+
+}
+
+.novedad1__link, .novedad2__link {
+    text-decoration: none;
+}
+
+/* Sección footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.979);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    border-top: 2px solid grey;
+}
+
+.redes {
+    padding: 20px;
+}
+
+.redes__titulo, .suscribe__titulo {
+    color: whitesmoke;
+}
+
+.redes__item {
+    margin-top: 5px;
+}
+
+.redes__item i {
+    width:20px;
+    color: whitesmoke;
+}
+
+.redes__lista {
+    list-style: none;
+    margin: 25px 0px;
+}
+
+.redes__item a {
+    text-decoration: none;
+    color: whitesmoke
+}
+
+.suscribe {
+    padding: 20px;
+}
+
+.suscribe__form--email {
+    margin: 25px 0px;
+    color: whitesmoke;
+}
+
+.suscribe__form--boton {
+    width: 220px;
+    height: 35px;
+    background-color: rgba(224, 196, 250, 0.575);
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/*GIRA*/
+
+
+
+
+
+/* .tamano-discos {
+    height:300px;
+    width: 300px;
+}
+
+
+.tamano-galeria {
+    width: 600px;
+} */
