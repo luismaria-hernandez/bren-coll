@@ -291,3 +291,61 @@ footer {
     color:antiquewhite;
     margin-right: 70px;
 }
+
+/* GALERIA */
+
+.galeria {
+    background-color: rgb(32, 32, 32);
+}
+
+.galeria__titulo {
+    text-align: center;
+    color: antiquewhite;
+    padding: 16px;
+}
+
+.galeria__img {
+    width: 30%;
+    padding: 16px;
+    margin: 16px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+/*CONTACTO*/
+
+.contacto {
+    background-color: rgb(32, 32, 32);
+    padding: 16px;
+    
+}
+
+.contacto__titulo {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.contacto__seccion {
+    background-color: whitesmoke;
+    width: 700px;
+    border-radius: 5px;
+    padding:16px;
+}
+
+.contacto__seccion1--items {
+    list-style: none;
+}
+
+.form__boton1 {
+    width: 215px;
+    height: 30px;
+    background-color: rgba(165, 78, 247, 0.575);
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.form__nombre, .form__apellido, .form__mail, .form__comentario {
+    margin-top: 16px;
+}
