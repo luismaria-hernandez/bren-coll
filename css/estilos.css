@@ -14,7 +14,7 @@
 header {
     height: 90px;
     background-color: rgba(0, 0, 0, 0.979);
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
     border-bottom: 2px solid grey;
 }
@@ -183,16 +183,111 @@ footer {
 
 /*GIRA*/
 
-
-
-
-
-/* .tamano-discos {
-    height:300px;
-    width: 300px;
+.main__gira {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../recursos/bren-coll-fechas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.fechas {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width:600px;
+    border-radius: 5px;
+    opacity: 70%;
+    padding: 20px;
+    box-shadow: 25px;
+}
 
-.tamano-galeria {
-    width: 600px;
-} */
+.fechas__titulo {
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.fechas__item {
+    list-style: none;
+    text-align: center;
+    margin: 25px 0px;
+    padding:20px;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.74);
+}
+
+.fechas__link {
+    text-decoration: none;
+    background-color: rgba(224, 196, 250, 0.575);
+    padding: 8px;
+    font-weight: bold;
+    color:antiquewhite;
+    border-radius: 5px;
+}
+
+/* LANZAMIENTOS */
+
+.lanzamientos{
+    background-color: rgb(32, 32, 32);
+    
+}
+
+.lanzamientos__titulo {
+    text-align: center;
+    padding: 20px 0px;
+    color:whitesmoke;
+}
+
+.lanzamientos__video {
+    display: flex;
+    justify-content: center;
+}
+
+.lanzamientos__discos{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.lanzamientos__discos--img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.lanzamientos__discos--tapa {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 300px;
+    background-color: rgb(247, 238, 226);
+}
+
+.spoti {
+    display:flex;
+    justify-content: center;
+}
+
+.lanzamientos__escuchar {
+    width: 687px;
+    height: 167px;
+    padding: 16px;
+    background-image: url('../recursos/spotify.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-self: center;
+    padding: 20px;
+}
+
+.lanzamientos__escuchar--titulo {
+    color:antiquewhite;
+    margin-right: 70px;
+}
