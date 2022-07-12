@@ -294,22 +294,117 @@ footer {
 
 /* GALERIA */
 
-.galeria {
+.main__galeria {
     background-color: rgb(32, 32, 32);
 }
 
-.galeria__titulo {
+.main__titulo {
     text-align: center;
     color: antiquewhite;
     padding: 16px;
 }
 
-.galeria__img {
-    width: 30%;
-    padding: 16px;
-    margin: 16px;
+.galeria {
+    display: grid;
+    width:100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-areas: "galeria1 galeria3 galeria2"
+                         "galeria1 galeria5 galeria2"
+                         "galeria4 galeria6 galeria6"
+                         "galeria4 galeria6 galeria6";
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.galeria1 {
+    background-image: url('../recursos/fotos-galeria1.jpg');
+    grid-area: galeria1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria2 {
+    background-image: url('../recursos/fotos-galeria2.jpg');
+    grid-area: galeria2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria3 {
+    background-image: url('../recursos/fotos-galeria3.jpg');
+    grid-area: galeria3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria4 {
+    background-image: url('../recursos/fotos-galeria4.jpg');
+    grid-area: galeria4;
+    background-position: 65% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria5 {
+    background-image: url('../recursos/fotos-galeria5.jpg');
+    grid-area: galeria5;
+    background-position: 65% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria6 {
+    background-image: url('../recursos/fotos-galeria6.jpg');
+    grid-area: galeria6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria__link {
+    text-decoration: none;
+    font-size: large;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.galeria__link:hover {
     background-color: antiquewhite;
+    width: 100px;
+    height: 30px;
+    color: black;
+    text-align: center;
     border-radius: 5px;
+    opacity: 70%;
 }
 
 /*CONTACTO*/
