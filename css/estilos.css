@@ -494,3 +494,119 @@ footer {
 .form__nombre, .form__apellido, .form__mail, .form__comentario {
     margin-top: 16px;
 }
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 320px) and (max-width: 575px) {
+    
+
+    /*HEADER GENERAL*/
+
+    header {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+    }
+
+    /*INDEX*/
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__lista {
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-grow: 0;
+    }
+
+    .presentacion__texto {
+        width: 400px;
+    }
+
+    .novedad1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+    }
+
+    .novedad2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+    }
+
+    /*FOOTER GENERAL*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suscribe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .suscribe__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*GALERÍA*/
+
+    .galeria {
+        display: grid;
+        width:100vw;
+        height: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "galeria1"
+                             "galeria2"
+                             "galeria3"
+                             "galeria4"
+                             "galeria5"
+                             "galeria6";
+        row-gap: 16px;
+    }
+
+    .galeria1 {
+        background-size:cover;
+        height: 150px;
+        background-position: 65% 25%;
+    }
+
+    .galeria2 {
+        background-size:cover;
+        height: 150px;
+        background-position: 65% 25%;
+    }
+
+    .galeria3 {
+        background-size:cover;
+        height: 150px;
+    }
+
+    .galeria4 {
+        background-size:cover;
+        height: 150px;
+    }
+
+    .galeria5 {
+        background-size:cover;
+        height: 150px;
+    }
+
+    .galeria6 {
+        background-size:cover;
+        height: 150px;
+    }
+
+}
