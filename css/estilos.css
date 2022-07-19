@@ -45,6 +45,11 @@ header {
     color:rgba(224, 196, 250, 0.575);
 }
 
+.header__item a:active {
+    background-color: whitesmoke;
+    color: rgba(224, 196, 250, 0.575);
+}
+
 .header__item :hover {
     color: whitesmoke;
     background-color: rgba(224, 196, 250, 0.575);
@@ -174,11 +179,16 @@ footer {
 .suscribe__form--boton {
     width: 220px;
     height: 35px;
-    background-color: rgba(224, 196, 250, 0.575);
+    background-image: linear-gradient(rgb(233, 214, 250),rgba(112, 9, 138, 0.938));
+    border: 1px solid rgb(141, 141, 141);
     color: whitesmoke;
     font-size: 16px;
     font-weight: bold;
     border-radius: 6px;
+}
+
+.suscribe__form--boton:hover {
+    background-image: linear-gradient(rgba(112, 9, 138, 0.938),rgb(233, 214, 250));
 }
 
 /*GIRA*/
@@ -193,22 +203,25 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 0px;
 }
 
 .fechas {
+    display: grid;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    width:600px;
+    background-color: rgba(0, 0, 0, 0.233);
+    width:700px;
     border-radius: 5px;
-    opacity: 70%;
     padding: 20px;
-    box-shadow: 25px;
+    border: 1px solid grey;
+
 }
 
 .fechas__titulo {
     text-align: center;
     margin: 16px 0px;
+    color: whitesmoke;
 }
 
 .fechas__item {
@@ -217,15 +230,21 @@ footer {
     margin: 25px 0px;
     padding:20px;
     border-bottom: 1px solid rgba(161, 161, 161, 0.74);
+    color: whitesmoke;
 }
 
 .fechas__link {
     text-decoration: none;
-    background-color: rgba(224, 196, 250, 0.575);
+    background-image: linear-gradient(rgb(233, 214, 250),rgba(112, 9, 138, 0.938));
     padding: 8px;
     font-weight: bold;
     color:antiquewhite;
     border-radius: 5px;
+    margin-left: 10px;
+}
+
+.fechas__link:hover {
+    background-image: linear-gradient(rgba(112, 9, 138, 0.938),rgb(233, 214, 250));
 }
 
 /* LANZAMIENTOS */
@@ -236,21 +255,37 @@ footer {
 }
 
 .lanzamientos__titulo {
-    text-align: center;
+/*     text-align: center; */
     padding: 20px 0px;
     color:whitesmoke;
 }
 
 .lanzamientos__video {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../recursos/textura2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.video {
+    width:1200px; 
+    height:600px;
 }
 
 .lanzamientos__discos{
     padding: 20px;
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
+    background-image: url('../recursos/textura1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
 }
 
 .lanzamientos__discos--img {
@@ -260,17 +295,41 @@ footer {
 }
 
 .lanzamientos__discos--tapa {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border: 1px solid grey;
     border-radius: 5px;
     width: 300px;
-    background-color: rgb(247, 238, 226);
+    background-color: rgba(0, 0, 0, 0.377);
 }
 
-.spoti {
-    display:flex;
+.lanzamientos__discos--tapa:hover {
+    transform: scale(1.25,1.25);
+    transition: all 1s;
+}
+
+
+.lanzamientos__discos--tapa, .lanzamientos__discos--texto {
+    color: whitesmoke;
+}
+
+.lanzamientos__discos--link {
+    text-decoration: none;
+    background-color:white ;
+    color: rgb(165, 78, 247);
+    font-size: large;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.icon {
+    font-size: xx-large;
 }
 
 .lanzamientos__escuchar {
@@ -393,29 +452,26 @@ footer {
 .galeria__link {
     text-decoration: none;
     font-size: large;
-    color: antiquewhite;
     font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 12px;
+    border-radius: 15px;
 }
 
 .galeria__link:hover {
-    background-color: antiquewhite;
-    width: 100px;
-    height: 30px;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-    opacity: 70%;
+    transform: scale(1.25,1.25);
+    transition: all 1s;
 }
 
 /*CONTACTO*/
 
 .contacto {
-    background-image: url('../recursos/fondo-contacto.jpg');
+    background-image: url('../recursos/fondo-contacto2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-/*     background-color: rgb(32, 32, 32); */
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,28 +482,40 @@ footer {
 }
 
 .contacto__seccion {
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.37);
     width: 700px;
     border-radius: 5px;
     padding:16px;
+}
+
+.contacto__seccion1 {
+    color: whitesmoke;
+    padding: 16px 0px;
+}
+
+.contacto__seccion2 {
+    color: whitesmoke;
 }
 
 .form__nombre {
     display: flex;
     flex-direction: column;
     align-self: center;
+    font-weight: bold;
 }
 
 .form__apellido {
     display: flex;
     flex-direction: column;
     align-self: center;
+    font-weight: bold;
 }
 
 .form__mail {
     display: flex;
     flex-direction: column;
     align-self: center;
+    font-weight: bold;
 }
 
 .form__comentario {
@@ -455,12 +523,16 @@ footer {
     flex-direction: column;
     align-self: center;
     margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.entrada {
+    border-radius: 10px;
 }
 
 .form__titulo {
     text-align: center;
 }
-
 
 
 .contacto__seccion2 {
@@ -482,13 +554,17 @@ footer {
 .form__boton {
     width: 215px;
     height: 30px;
-    background-color: rgba(165, 78, 247, 0.575);
-    border: 1px solid rgba(165, 78, 247, 0.575);
+    background-image: linear-gradient(rgb(233, 214, 250),rgba(112, 9, 138, 0.938));
+    border: 1px solid rgb(141, 141, 141);
     color: whitesmoke;
     font-size: 18px;
     font-weight: bold;
     border-radius: 7px;
 
+}
+
+.form__boton:hover {
+    background-image: linear-gradient(rgba(112, 9, 138, 0.938),rgb(233, 214, 250));
 }
 
 .form__nombre, .form__apellido, .form__mail, .form__comentario {
@@ -608,5 +684,69 @@ footer {
         background-size:cover;
         height: 150px;
     }
+
+    /*GIRA*/
+
+    .main__gira {
+        height: 100%;
+    }
+
+    .fechas {
+        width: 80%;
+    }
+
+    .fechas__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*LANZAMIENTOS*/
+
+    .lanzamientos__video {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .lanzamientos__discos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lanzamientos__discos--tapa {
+        margin: 20px 0px;
+    }
+
+    /*CONTACTO*/
+
+    .contacto__seccion {
+        width: 90%;
+    }
+
+    .contacto__seccion1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .prensa {
+        margin-top: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form__boton {
+        width: 100%;
+        margin-top: 16px;
+    }
+
 
 }
