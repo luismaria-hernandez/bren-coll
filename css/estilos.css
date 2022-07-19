@@ -121,7 +121,6 @@ header {
     background-color: whitesmoke;
     padding: 16px;
     border-radius: 4px;
-    width: 70%;
     height: 110px;
 
 }
@@ -601,19 +600,11 @@ footer {
         width: 400px;
     }
 
-    .novedad1{
+    .novedad1, .novedad2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 400px;
-        height: 300px;
-    }
-
-    .novedad2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
+        width: 95%;
         height: 300px;
     }
 
