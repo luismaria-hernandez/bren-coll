@@ -496,6 +496,12 @@ footer {
     align-items: center;
     width: 95%;
     height: 300px; }
+  .novedades__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cardn {
+    margin: 10px 0; }
   /*FOOTER GENERAL*/
   footer {
     display: flex;
