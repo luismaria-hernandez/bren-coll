@@ -22,67 +22,57 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="header__logo" src="../recursos/bren-coll-original-negro-convertido.png" alt="logo-bren-coll"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__lista">
-                  <li class="nav-item header__item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item header__item">
-                    <a class="nav-link " href="gira.html">Gira</a>
-                  </li>
-                  <li class="nav-item header__item">
-                    <a class="nav-link " href="lanzamientos.html">Lanzamientos</a>
-                  </li>
-                  <li class="nav-item header__item">
-                    <a class="nav-link " href="galeria.html">Galería</a>
-                  </li>
-                  <li class="nav-item header__item">
-                    <a class="nav-link " href="#">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#"><img class="header__logo" src="../recursos/bren-coll-original-negro-convertido.png" alt="logo-bren-coll"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__lista">
+                    <li class="nav-item header__item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item header__item">
+                        <a class="nav-link " href="gira.html">Gira</a>
+                    </li>
+                    <li class="nav-item header__item">
+                        <a class="nav-link " href="lanzamientos.html">Lanzamientos</a>
+                    </li>
+                    <li class="nav-item header__item">
+                        <a class="nav-link " href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item header__item">
+                        <a class="nav-link " href="#">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-        <!-- <nav class="header__nav">
-            <img class="header__logo" src="recursos/bren-coll-original-negro-convertido.png" alt="logo-bren-coll">
-            <ul class="header__lista">
-                <li class="header__item"><a href="#">Home</a></li>
-                <li class="header__item"><a href="paginas/gira.html">Gira</a></li>
-                <li class="header__item"><a href="paginas/lanzamientos.html">Lanzamientos</a></li>
-                <li class="header__item"><a href="paginas/galeria.html">Galería</a></li>
-                <li class="header__item"><a href="paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
+        </nav>
     </header>
     <main class="contacto">
         <h1 class="contacto__titulo">Contacto</h1>
         <section class="contacto__seccion">
             <article class="contacto__seccion1">
-                <div>
-                    <h2 class="contacto__seccion1--titulo">Management & Booking</h2>
-                    <ul class="contacto__seccion1--lista">
-                        <li class="contacto__seccion1--items">Maya Producciones</li>
-                        <li class="contacto__seccion1--items">Ayacucho 231</li>
-                        <li class="contacto__seccion1--items">Córdoba</li>
-                        <li class="contacto__seccion1--items">Argentina</li>
-                        <li class="contacto__seccion1--items">Tel: 0351-1234567899</li>
+                <div class="contacto__seccion1-man">
+                    <h2 class="contacto__seccion1-titulo">Management & Booking</h2>
+                    <ul class="contacto__seccion1-lista">
+                        <li class="contacto__seccion1-items">Maya Producciones</li>
+                        <li class="contacto__seccion1-items">Ayacucho 231</li>
+                        <li class="contacto__seccion1-items">Córdoba</li>
+                        <li class="contacto__seccion1-items">Argentina</li>
+                        <li class="contacto__seccion1-items">Tel: 0351-1234567899</li>
                     </ul>
                 </div>
-                <div class="prensa">
-                    <h2 class="contacto__seccion1--titulo">Prensa</h2>
-                    <ul class="contacto__seccion1--lista">
-                        <li class="contacto__seccion1--items">Leticia Lebihan</li>
-                        <li class="contacto__seccion1--items">leticialebihan@mail.com</li>
+                <div class="contacto__seccion1-prensa">
+                    <h2 class="contacto__seccion1-titulo">Prensa</h2>
+                    <ul class="contacto__seccion1-lista">
+                        <li class="contacto__seccion1-items">Leticia Lebihan</li>
+                        <li class="contacto__seccion1-items">leticialebihan@mail.com</li>
                     </ul>
                 </div>
             </article>
             <article class="contacto__seccion2">
-                <form method="post">
-                    <h2 class="form__titulo">Mensajes para Bren</h2>
+                <form class="form__contacto" method="post">
+                    <h2 class="form__contacto-titulo">Mensajes para Bren</h2>
                     <div class="mb-3">
                         <label class="form-label" for="nombre">Nombre:</label>
                         <input class="form-control" type="text" name="nombre">
@@ -99,33 +89,36 @@
                         <label class="form-label" for="comentario">Deje su mensaje:</label>
                         <textarea class="form-control" name="comentario" cols="30" rows="10"></textarea>
                     </div>
-                    <button class="form__boton" type="submit">Enviar</button>
-                    <button class="form__boton" type="submit">Limpiar campos</button>
+                    <button class="btn btn-primary d-inline form__contacto-boton" type="submit">Enviar</button>
+                    <button class="btn btn-primary d-inline form__contacto-boton" type="submit">Limpiar campos</button>
                 </form>
             </article>
         </section>
     </main>
     <footer>
-        <section class="redes">
-            <h4 class="redes__titulo">Mis redes sociales:</h4>
-            <ul class="redes__lista">
-                <li class="redes__item">
-                    <i class="fa-brands fa-facebook-square"></i><a href="#">facebook/brencoll</a>
+        <section class="footer__redes">
+            <h4 class="footer__redes-titulo">Seguime en mis redes:</h4>
+            <ul class="footer__redes-lista">
+                <li class="footer__redes-item">
+                  <i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/breenColl">Facebook</a>
                 </li>
-                <li class="redes__item">
-                    <i class="fa-brands fa-instagram-square"></i><a href="#">instagram/brencoll</a>
+                <li class="footer__redes-item">
+                  <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/bren_coll">Instagram</a>
+                </li>
+                <li class="footer__redes-item">
+                  <i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/c/brencoll">YouTube</a>
                 </li>
             </ul>
         </section>
 
-        <section class="suscribe">
-            <h4 class="suscribe__titulo">Suscribite y recibí las novedades por e-mail</h4>
-            <form class="suscribe__form" method="post">
+        <section class="footer__suscribe">
+            <h4 class="footer__suscribe-titulo">Suscribite y recibí las novedades por e-mail:</h4>
+            <form class="footer__suscribe-form" method="post">
                 <div class="mb-3">
                     <label class="form-label " for="email">E-mail:</label>
                     <input class="form-control" type="email" name="email">
                 </div>
-                <button class="suscribe__form--boton" type="submit">Suscribirse</button>
+                <button class="footer__suscribe-form-boton" type="submit">Suscribirse</button>
             </form>
         </section>
     </footer>

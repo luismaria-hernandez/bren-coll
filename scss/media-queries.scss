@@ -1,0 +1,195 @@
+@media (min-width: 320px) and (max-width: 575px) {
+    
+
+    /*HEADER GENERAL*/
+
+    header {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+
+        .header {
+
+            &__nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__lista {
+                flex-wrap: wrap;
+                flex-direction: column;
+                flex-grow: 0;
+            }
+        }
+    }
+
+    
+
+    /*FOOTER GENERAL*/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer {
+
+            &__suscribe{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &-titulo {
+                    text-align: center;
+                }
+            }
+        }  
+    }
+
+    /*INDEX - SECCIÓN DE PRESENTACIÓN*/
+
+    .presentacion {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .novedades {
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-n {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /*GIRA*/
+
+
+    .main__gira {
+
+        &-fechas{
+
+            &-item{
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-link{
+                margin-top: 16px;
+            }
+        }
+    }
+
+    /*LANZAMIENTOS*/
+
+    .lanzamientos {
+
+        &__video {
+            padding: 20px;
+        }
+
+        &__element {
+            width: auto;
+            height: auto;
+        }
+
+        &__discos {
+            display: flex;
+            flex-direction: column;
+
+            &-tapa {
+                margin: 20px 0px;
+                padding:5px;
+            }
+        }
+    }
+
+    
+    /*GALERÍA*/
+
+    .main__galeria {
+
+        &-galeria {
+            display: grid;
+            width:auto;
+            height: auto;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+            grid-template-areas: "galeria1"
+                                "galeria2"
+                                "galeria3"
+                                "galeria4"
+                                "galeria5"
+                                "galeria6";
+        
+            row-gap: 16px;
+        }
+
+        &-galeria1 {
+            background-size:cover;
+            height: 150px;
+            background-position: 65% 25%;
+        }
+    
+        &-galeria2 {
+            background-size:cover;
+            height: 150px;
+            background-position: 65% 25%;
+        }
+    
+        &-galeria3 {
+            background-size:cover;
+            height: 150px;
+        }
+    
+        &-galeria4 {
+            background-size:cover;
+            height: 150px;
+        }
+    
+        &-galeria5 {
+            background-size:cover;
+            height: 150px;
+        }
+    
+        &-galeria6 {
+            background-size:cover;
+            height: 150px;
+        }
+        
+    }
+
+
+    /*CONTACTO*/
+
+    .contacto {
+
+        &__seccion {
+            width: auto;
+
+            &1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                
+                &-prensa {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .form__contacto {
+
+        &-boton {
+            width: 100% !important;
+            margin-top: 20px;
+        }
+    }
+}

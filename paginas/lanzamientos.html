@@ -46,66 +46,58 @@
           </div>
         </div>
       </nav>
-    <!-- <nav class="header__nav">
-        <img class="header__logo" src="recursos/bren-coll-original-negro-convertido.png" alt="logo-bren-coll">
-        <ul class="header__lista">
-            <li class="header__item"><a href="#">Home</a></li>
-            <li class="header__item"><a href="paginas/gira.html">Gira</a></li>
-            <li class="header__item"><a href="paginas/lanzamientos.html">Lanzamientos</a></li>
-            <li class="header__item"><a href="paginas/galeria.html">Galería</a></li>
-            <li class="header__item"><a href="paginas/contacto.html">Contacto</a></li>
-        </ul>
-    </nav> -->
 </header>
-    <main class="lanzamientos">
 
+    <main class="lanzamientos">
         <section class="lanzamientos__video">
             <h1 class="lanzamientos__titulo">Lanzamientos</h1>
-            <iframe class="video" src="https://www.youtube.com/embed/MEXcwSaUqOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="lanzamientos__element" src="https://www.youtube.com/embed/MEXcwSaUqOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
 
         <section class="lanzamientos__discos" >
-            
-            <article class="lanzamientos__discos--tapa">
-                <img class="lanzamientos__discos--img" src="../recursos/bren-coll-ella.jpg" alt="bren-coll-ella">
-                <h3 class="lanzamientos__discos--sub">Ella</h3>
-                <p class="lanzamientos__discos--texto">Año de lanzamiento: 2018</p>
-                <a class="lanzamientos__discos--link" href="#"><i class="fa-brands fa-spotify icon"></i>  Escuchar en Spotify</a>
+            <article class="lanzamientos__discos-tapa">
+                <img class="lanzamientos__discos-img" src="../recursos/bren-coll-ella.jpg" alt="bren-coll-ella">
+                <h3 class="lanzamientos__discos-sub">Ella</h3>
+                <p class="lanzamientos__discos-texto">Año de lanzamiento: 2018</p>
+                <a class="lanzamientos__discos-link" href="#"><i class="fa-brands fa-spotify lanzamientos__discos-icon"></i>  Escuchar en Spotify</a>
             </article>
 
-            <article class="lanzamientos__discos--tapa">
-                <img class="lanzamientos__discos--img" src="../recursos/bren-coll-vivac.jpg" alt="bren-coll-vivac">
-                <h3 class="lanzamientos__discos--sub">Vivac</h3>
-                <p class="lanzamientos__discos--texto">Año de lanzamiento: 2020</p>
-                <a class="lanzamientos__discos--link" href="#"><i class="fa-brands fa-spotify icon"></i>  Escuchar en Spotify</a>
+            <article class="lanzamientos__discos-tapa">
+                <img class="lanzamientos__discos-img" src="../recursos/bren-coll-vivac.jpg" alt="bren-coll-vivac">
+                <h3 class="lanzamientos__discos-sub">Vivac</h3>
+                <p class="lanzamientos__discos-texto">Año de lanzamiento: 2020</p>
+                <a class="lanzamientos__discos-link" href="#"><i class="fa-brands fa-spotify lanzamientos__discos-icon"></i>  Escuchar en Spotify</a>
             </article>
-
         </section>
     </main>
+
     <footer>
-      <section class="redes">
-          <h4 class="redes__titulo">Mis redes sociales:</h4>
-          <ul class="redes__lista">
-              <li class="redes__item">
-                  <i class="fa-brands fa-facebook-square"></i><a href="#">facebook/brencoll</a>
-              </li>
-              <li class="redes__item">
-                  <i class="fa-brands fa-instagram-square"></i><a href="#">instagram/brencoll</a>
-              </li>
-          </ul>
+      <section class="footer__redes">
+        <h4 class="footer__redes-titulo">Seguime en mis redes:</h4>
+        <ul class="footer__redes-lista">
+            <li class="footer__redes-item">
+              <i class="fa-brands fa-facebook-square"></i><a href="https://www.facebook.com/breenColl">Facebook</a>
+            </li>
+            <li class="footer__redes-item">
+              <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/bren_coll">Instagram</a>
+            </li>
+            <li class="footer__redes-item">
+              <i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/c/brencoll">YouTube</a>
+            </li>
+        </ul>
       </section>
 
-      <section class="suscribe">
-          <h4 class="suscribe__titulo">Suscribite y recibí las novedades por e-mail</h4>
-          <form class="suscribe__form" method="post">
+      <section class="footer__suscribe">
+          <h4 class="footer__suscribe-titulo">Suscribite y recibí las novedades por e-mail:</h4>
+          <form class="footer__suscribe-form" method="post">
               <div class="mb-3">
                   <label class="form-label " for="email">E-mail:</label>
                   <input class="form-control" type="email" name="email">
               </div>
-              <button class="suscribe__form--boton" type="submit">Suscribirse</button>
+              <button class="footer__suscribe-form-boton" type="submit">Suscribirse</button>
           </form>
       </section>
-  </footer>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

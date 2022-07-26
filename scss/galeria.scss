@@ -1,0 +1,112 @@
+.main__galeria {
+    background-color: rgb(32, 32, 32);
+
+    &-titulo {
+        text-align: center;
+        color: whitesmoke;
+        padding: 16px 0px;
+    }
+
+    &-link {
+        text-decoration: none;
+        font-size: large;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0);
+        padding: 12px;
+        border-radius: 15px;
+
+        &:hover{
+            color:whitesmoke;
+            background-color: rgba(0, 0, 0, 0.418);
+            background-size: cover;
+        }
+    }
+
+    &-galeria {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr;
+        grid-template-areas: "galeria1 galeria3 galeria2"
+                             "galeria1 galeria5 galeria2"
+                             "galeria4 galeria6 galeria6"
+                             "galeria4 galeria6 galeria6";
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    &-galeria1 {
+        background-image: url('../recursos/fotos-galeria1.jpg');
+        grid-area: galeria1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    &-galeria2 {
+        background-image: url('../recursos/fotos-galeria2.jpg');
+        grid-area: galeria2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-galeria3 {
+        background-image: url('../recursos/fotos-galeria3.jpg');
+        grid-area: galeria3;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-galeria4 {
+        background-image: url('../recursos/fotos-galeria4.jpg');
+        grid-area: galeria4;
+        background-position: 65% 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-galeria5 {
+        background-image: url('../recursos/fotos-galeria5.jpg');
+        grid-area: galeria5;
+        background-position: 65% 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &-galeria6 {
+        background-image: url('../recursos/fotos-galeria6.jpg');
+        grid-area: galeria6;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+

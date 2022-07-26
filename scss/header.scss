@@ -1,0 +1,42 @@
+header {
+
+    background-color: rgba(27, 27, 27, 0.979);
+    border-bottom: 2px solid rgb(39, 39, 39);
+
+    .header {
+
+        &__logo {
+            width: 150px;
+        }
+        
+        &__lista {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+            
+        }
+        
+        &__nav {
+            display: flex;
+        }
+        
+        &__item {
+            display: flex;
+            align-items: center;
+            margin: 0px 20px;
+        }
+
+        &__item a {
+            color: rgba(224, 196, 250, 0.575);
+            font-size: large;
+
+            &:hover {
+                color: whitesmoke;
+                background-color: rgba(224, 196, 250, 0.575);
+                padding: 6px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
