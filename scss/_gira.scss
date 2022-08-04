@@ -12,7 +12,7 @@
     &-fechas-titulo {
         text-align: center;
         margin: 16px 0px;
-        color: whitesmoke;
+        color: $color-texto;
     }
 
     &-fechas-lista {
@@ -33,20 +33,20 @@
         margin: 25px 0px;
         padding:20px;
         border-bottom: 1px solid rgba(161, 161, 161, 0.74);
-        color: whitesmoke;
+        color: $color-texto;
     }
 
     &-fechas-link {
         text-decoration: none;
-        background-image: linear-gradient(rgb(233, 214, 250),rgba(112, 9, 138, 0.938));
+        background-image: linear-gradient($color1-boton-foot,$color2-boton-foot);
         padding: 8px;
         font-weight: bold;
-        color:antiquewhite;
+        color: $color-texto;
         border-radius: 5px;
         margin-left: 10px;
 
         &:hover {
-            background-image: linear-gradient(rgba(112, 9, 138, 0.938),rgb(233, 214, 250));
+            background-image: linear-gradient($color2-boton-foot,$color1-boton-foot);
         }
     }
 }

@@ -47,6 +47,7 @@
     &__img {
         width: auto;
         height: 170px;
+        object-fit: cover; /*Para las imágenes estiradas*/
     }
 }
 

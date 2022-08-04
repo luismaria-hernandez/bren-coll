@@ -1,7 +1,9 @@
+@import "variables";
+
 header {
 
-    background-color: rgba(27, 27, 27, 0.979);
-    border-bottom: 2px solid rgb(39, 39, 39);
+    background-color: $background-foot-head;
+    border-bottom: 2px solid $border-foot-head;
 
     .header {
 
@@ -27,12 +29,12 @@ header {
         }
 
         &__item a {
-            color: rgba(224, 196, 250, 0.575);
+            color: $link-head;
             font-size: large;
 
             &:hover {
-                color: whitesmoke;
-                background-color: rgba(224, 196, 250, 0.575);
+                color: $color-texto;
+                background-color: $link-head;
                 padding: 6px;
                 border-radius: 6px;
             }

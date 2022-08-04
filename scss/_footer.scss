@@ -1,9 +1,9 @@
 footer {
-    background-color: rgba(27, 27, 27, 0.979);
+    background-color: $background-foot-head;
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
-    border-top: 2px solid rgb(39, 39, 39);
+    border-top: 2px solid $border-foot-head;
     color: whitesmoke;
 
     .footer {
@@ -33,7 +33,7 @@ footer {
 
             & a {
                 text-decoration: none;
-                color: whitesmoke
+                color: $color-texto;
             }
         }
         
@@ -48,15 +48,15 @@ footer {
             &-boton {
                 width: 100%;
                 height: 30px;
-                background-image: linear-gradient(rgb(233, 214, 250),rgba(112, 9, 138, 0.938));
+                background-image: linear-gradient($color1-boton-foot,$color2-boton-foot);
                 border: 1px solid rgb(141, 141, 141);
-                color: whitesmoke;
+                color: $color-texto;
                 font-size: 16px;
                 font-weight: bold;
                 border-radius: 6px;
     
                 &:hover {
-                    background-image: linear-gradient(rgba(112, 9, 138, 0.938),rgb(233, 214, 250));
+                    background-image: linear-gradient($color2-boton-foot, $color1-boton-foot);
                 }
             }
         }

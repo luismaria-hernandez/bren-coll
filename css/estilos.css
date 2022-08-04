@@ -103,7 +103,9 @@ footer {
     text-decoration: none; }
   .novedades__img {
     width: auto;
-    height: 170px; }
+    height: 170px;
+    object-fit: cover;
+    /*Para las imágenes estiradas*/ }
 
 .main__gira {
   background-image: url("../recursos/bren-coll-fechas.jpg");
@@ -139,7 +141,7 @@ footer {
     background-image: linear-gradient(#e9d6fa, rgba(112, 9, 138, 0.938));
     padding: 8px;
     font-weight: bold;
-    color: antiquewhite;
+    color: whitesmoke;
     border-radius: 5px;
     margin-left: 10px; }
     .main__gira-fechas-link:hover {
@@ -231,63 +233,27 @@ footer {
   .main__galeria-galeria1 {
     background-image: url("../recursos/fotos-galeria1.jpg");
     grid-area: galeria1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: center; }
   .main__galeria-galeria2 {
     background-image: url("../recursos/fotos-galeria2.jpg");
     grid-area: galeria2;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: center; }
   .main__galeria-galeria3 {
     background-image: url("../recursos/fotos-galeria3.jpg");
     grid-area: galeria3;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: center; }
   .main__galeria-galeria4 {
     background-image: url("../recursos/fotos-galeria4.jpg");
     grid-area: galeria4;
-    background-position: 65% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: 65% 25%; }
   .main__galeria-galeria5 {
     background-image: url("../recursos/fotos-galeria5.jpg");
     grid-area: galeria5;
-    background-position: 65% 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: 65% 35%; }
   .main__galeria-galeria6 {
     background-image: url("../recursos/fotos-galeria6.jpg");
     grid-area: galeria6;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    background-position: center; }
 
 .contacto {
   background-image: url("../recursos/fondo-contacto2.jpg");
@@ -425,3 +391,11 @@ footer {
   .form__contacto-boton {
     width: 100% !important;
     margin-top: 20px; } }
+
+.posicion-background, .main__galeria-galeria1, .main__galeria-galeria2, .main__galeria-galeria3, .main__galeria-galeria4, .main__galeria-galeria5, .main__galeria-galeria6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }

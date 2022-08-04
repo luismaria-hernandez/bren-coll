@@ -1,9 +1,11 @@
+@import "variables";
+
 .main__galeria {
     background-color: rgb(32, 32, 32);
 
     &-titulo {
         text-align: center;
-        color: whitesmoke;
+        color: $color-texto;
         padding: 16px 0px;
     }
 
@@ -16,7 +18,7 @@
         border-radius: 15px;
 
         &:hover{
-            color:whitesmoke;
+            color: $color-texto;
             background-color: rgba(0, 0, 0, 0.418);
             background-size: cover;
         }
@@ -39,12 +41,7 @@
         background-image: url('../recursos/fotos-galeria1.jpg');
         grid-area: galeria1;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
 
     }
     
@@ -52,60 +49,35 @@
         background-image: url('../recursos/fotos-galeria2.jpg');
         grid-area: galeria2;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
     }
     
     &-galeria3 {
         background-image: url('../recursos/fotos-galeria3.jpg');
         grid-area: galeria3;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
     }
     
     &-galeria4 {
         background-image: url('../recursos/fotos-galeria4.jpg');
         grid-area: galeria4;
         background-position: 65% 25%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
     }
     
     &-galeria5 {
         background-image: url('../recursos/fotos-galeria5.jpg');
         grid-area: galeria5;
         background-position: 65% 35%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
     }
     
     &-galeria6 {
         background-image: url('../recursos/fotos-galeria6.jpg');
         grid-area: galeria6;
         background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend .posicion-background;
     }
 
 }
